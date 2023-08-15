@@ -89,7 +89,7 @@ class Multiselect {
         });        
       }else{
         Array.from(options).forEach(optionElement => {
-          optionElement.childNodes.item(0).innerText.toLowerCase().includes(ele.target.value) 
+          optionElement.childNodes.item(0).innerText.toLowerCase().includes(ele.target.value.toLowerCase()) 
             ? optionElement.style.display = 'block'
             : optionElement.style.display = 'none'
         })
