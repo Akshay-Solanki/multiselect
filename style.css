@@ -1,0 +1,100 @@
+.container-fluid{
+  margin: 0;
+  background-color: darkgrey;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  width: 30%;
+}
+
+.multiselect >.select{
+  display: none;
+}
+
+.multiselect .multiselect-box{
+  position: relative;
+  box-sizing: content-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+
+.multiselect .multiple-down {
+  margin-top: 12px;
+  height: 8px;
+}
+.multiselect .multiple-down::before {
+  border: solid;
+  position: relative;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  border-color: #999 transparent transparent;
+  content: "";
+}
+.multiselect .multiselect-input-container{
+  display: none;
+  margin: 0px 10px;
+}
+
+.multiselect .multiselect-input-container .multiselect-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px 02px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.multiselect .option-container{
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+}
+.multiselect .option-container .option{
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.multiselect .option-container .option.select{
+  background-color: #614BC3;
+  color: white;
+}
+.multiselect .option-container .option:hover{
+  background-color: #ADC4CE;
+  color: white;
+}
+
+.multiselect .multiselect-box .multiselect-values-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+.multiselect .multiselect-box .multiselect-values-container .multiselect-values{
+  display: flex;
+  gap:5px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.multiselect .multiselect-box .multiselect-values-container .multiselect-values .tag{
+  display: flex;
+  border: 1px solid #614BC3;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #614BC3;
+  color: white;
+  font-weight: 700;
+  align-items: center;
+  padding: 0px 5px;
+  gap: 5px;
+}
+.multiselect .tag .remove{
+  font-size: 20px;
+}

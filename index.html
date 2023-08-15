@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiselect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+  <div class="container">
+    <select class="select" id="select-box" name="select[]" multiple placeholder="Select Multiple">
+      <option value="in">India</option>
+      <option value="cn">China</option>
+      <option value="us">America</option>
+      <option value="ge">Germany</option>
+      <option value="af">South Africa</option>
+    </select>
+  </div>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    new Multiselect('select-box');
+  </script>
+</body>
+</html>
